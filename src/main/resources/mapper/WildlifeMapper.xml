@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.test.mapper.WildlifeMapper">
+
+    <resultMap id="Wildlife" type="com.example.test.bean.WildlifeBean">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="wildType" jdbcType="VARCHAR" property="wildType" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="latitude" jdbcType="VARCHAR" property="latitude" />
+        <result column="longitude" jdbcType="VARCHAR" property="longitude" />
+        <result column="intro" jdbcType="VARCHAR" property="intro" />
+        <result column="img_url" jdbcType="VARCHAR" property="img_url" />
+    </resultMap>
+
+    <select id="getInfo" resultMap= "Wildlife">
+        SELECT * FROM wildlife
+    </select>
+
+</mapper>

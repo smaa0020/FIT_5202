@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.test.mapper.VegetationMapper">
+    <resultMap id="Vegetation" type="com.example.test.bean.VegetationBean">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="vegeType" jdbcType="VARCHAR" property="vegeType" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="latitude" jdbcType="VARCHAR" property="latitude" />
+        <result column="longitude" jdbcType="VARCHAR" property="longitude" />
+        <result column="intro" jdbcType="VARCHAR" property="intro" />
+        <result column="img_url" jdbcType="VARCHAR" property="img_url" />
+    </resultMap>
+
+    <select id="getInfo" resultMap= "Vegetation">
+        SELECT * FROM vegetation
+    </select>
+
+</mapper>

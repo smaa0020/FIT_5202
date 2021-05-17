@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <title>Add Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/activity_style.css" rel="stylesheet">
+    <link href="css/search_style.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="icofont/icofont.min.css" rel="stylesheet">
+    <link href="boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="animate.css/animate.min.css" rel="stylesheet">
+    <link href="owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- ======= Top Bar ======= -->
+<div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex">
+        <div class="contact-info mr-auto">
+        </div>
+    </div>
+</div>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+        <a href="index" class="logo"><img src="/images/logo.png" alt="" title=""></a>
+        <p class="project-name">Nature Space +</p>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav class="nav-menu d-none d-lg-block">
+            <ul>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                <li class=""><a href="/index">Home</a></li>
+
+                <li class="drop-down"><a href="#">Nature Area</a>
+                    <ul>
+                        <li><a href="nature-area">Green Area</a></li>
+                        <li><a href="water-area">Water Area</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop-down"><a href="#">Biodiversity Guide</a>
+                    <ul>
+                        <li><a href="wild-life">Wildlife</a></li>
+                        <li><a href="vegetation">Vegetation</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop-down"><a href="#">Green Design Guide</a>
+                    <ul>
+                        <li><a href="green_design">Decorative Type</a></li>
+                        <li><a href="decorative-sample-all">Decorative Sample</a></li>
+                        <li><a href="plant-sample-all">Recommended Plants</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop-down"><a href="#">Planting Guide</a>
+                    <ul>
+                        <li><a href="planting-guide">Article</a></li>
+                        <li><a href="video">Video</a></li>
+                    </ul>
+                </li>
+
+                <li class="active"><a href="activity">Activities</a></li>
+
+                <!--                <li><a href="#about">About</a></li>-->
+            </ul>
+        </nav>
+        <!-- nav-menu -->
+        <!--        <a href="#about" class="get-started-btn scrollto">Reserved_button</a>-->
+
+    </div>
+</header>
+<!-- End Header -->
+
+
+
+<!-- ======= Green Design Speaker Section ======= -->
+<section id="speakers">
+    <!-- ======= Green Design Guide Section ======= -->
+    <section id="green-design-guide" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <li class="hint_bar">&nbsp&nbsp<a class="hint_bar" href="index">Home</a>&nbsp/&nbspActivity</li>
+            <div class="section-title">
+                <h2>Activity Guide</h2>
+                <p>Learn about the City of Melbourne's urban nature education and awareness activities including our citizen science program and art-nature engagement projects. And this page can help citizen find some activities to connect with urban nature in Melbourne.</p>
+            </div>
+
+
+            <div class="row" data-aos="fade-up">
+                <div class="col-md-12">
+                    <p>&nbsp</p>
+                    <h2 class="get-bolds">Recommended Activities</h2>
+                    <div>
+                        <p class="nature_area"><br>There are some popular public welfare activities about protecting urban nature area.</p>
+                    </div>
+
+                    <br>
+                    <div class="container" data-aos="fade-up">
+                        <div id="main-slider">
+                            <div id="side-1" class="slide card active">
+                                <img class="card-img-top" src="https://www.rbg.vic.gov.au/media/uznaskcv/grotto-garden-2.jpg?anchor=center&mode=crop&width=600&height=400&rnd=132615962823070000" />
+                                <div class="card-body">
+                                    <h5 id="title-lavado" class="card-title">
+                                        Nurtured by Nature Access Program
+                                    </h5>
+                                    <p class="card-text">
+                                        Nurtured by Nature Access Program which aims to improve access to our gardens for Victorian students through one-off subsidised excursions, digital garden experiences and longer-term partnerships.
+                                    </p>
+                                    <div class="text-center">
+                                        <a
+                                                class="btn-contact"
+                                                href="https://www.rbg.vic.gov.au/learn/nurtured-by-nature-access-program/"
+                                                target="_blank"
+                                        >Official Website</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="side-2" class="slide card">
+                                <img
+                                        class="card-img-top"
+                                        src="https://www.melbourne.vic.gov.au/SiteCollectionImages/g4w-150px.jpg"
+                                />
+                                <div class="card-body">
+                                    <h5 id="title-anticorrupcion" class="card-title">
+                                        Gardens for Wildlife
+                                    </h5>
+                                    <p class="card-text">
+                                        Gardens for Wildlife Melbourne aims to inspire Melburnians to create space for nature in the city.
+                                    </p>
+                                    <!--                                    href="javascript:void(0)"-->
+                                    <div class="text-center">
+                                        <a
+                                                class="btn-contact"
+                                                href="https://www.melbourne.vic.gov.au/community/greening-the-city/urban-nature/garden"
+                                                target="_blank"
+                                        >Official Website</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="side-3" class="slide card">
+                                <img class="card-img-top" src="https://ecocentre.com/sites/default/files/images/Standards/Banners/Header%20-%20Volunteering.jpg" />
+                                <div class="card-body">
+                                    <h5 id="title-sumariales" class="card-title">
+                                        Volunteer with eco centre
+                                    </h5>
+                                    <p class="card-text">
+                                        An empowered community, actively cultivating long-term environmental well-being​. They have different volunteering programs-Compost Turners, Garden Waters, NatureSpot, Mollusc Monitoring.
+                                    </p>
+                                    <div class="text-center">
+                                        <a
+                                                class="btn-contact"
+                                                href="https://www.ecocentre.com/volunteer"
+                                                target="_blank"
+                                        >Official Website</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="side-4" class="slide card">
+                                <img class="card-img-top" src="https://gardensforwildlifevictoria.files.wordpress.com/2020/01/knoxg4w-logo_kes.jpg?w=152" />
+                                <div class="card-body">
+                                    <h5 id="title-adhoc" class="card-title">
+                                        Wildlife gardening
+                                    </h5>
+                                    <p class="card-text">
+                                        Garden in a way that supports the unique and special plants and animals native to our area – what we call wildlife gardening.
+                                    </p>
+                                    <div class="text-center">
+                                        <a
+                                                class="btn-contact"
+                                                href="https://gardensforwildlifevictoria.com/affiliates/"
+                                                target="_blank"
+                                        >Official Website</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="side-5" class="slide card">
+                                <img
+                                        class="card-img-top"
+                                        src="https://zoosvic-endpoint-blob-prod.azureedge.net/cache/3/f/d/0/f/4/3fd0f47f7a9bba419d949400f7a10001c5ee132a.webp"
+                                />
+                                <div class="card-body">
+                                    <h5 id="title-duediligence" class="card-title">
+                                        Nature photo contest
+                                    </h5>
+                                    <p class="card-text">
+                                        Helping make our world greener and more sustainable.
+                                    </p>
+                                    <div class="text-center">
+                                        <a
+                                                class="btn-contact"
+                                                href="https://www.natureaustralia.org.au/get-involved/take-action/photo-contest/"
+                                                target="_blank"
+                                        >Official Website</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="side-6" class="slide card">
+                                <img
+                                        class="card-img-top"
+                                        src="https://zoosvic-endpoint-blob-prod.azureedge.net/cache/3/3/2/0/b/8/3320b80e70d6025152137485a9cf796a080b4cd9.webp"
+                                />
+                                <div class="card-body">
+                                    <h5 id="title-capacitaciones" class="card-title">
+                                        Melbourne Zoo Ticket
+                                    </h5>
+                                    <p class="card-text">
+                                        Located in the heart of the city, you can discover penguins, seals and other inhabitants of Victoria's coast and ocean at the Wild Sea exhibition
+                                    </p>
+                                    <div class="text-center">
+                                        <a
+                                                class="btn-contact"
+                                                href="https://www.zoo.org.au/melbourne/"
+                                                target="_blank"
+                                        >Official Website</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="side-7" class="slide card">
+                                <img class="card-img-top" src="https://media.timeout.com/images/105379023/image.jpg" />
+                                <div class="card-body">
+                                    <h5 id="title-fiscales" class="card-title">
+                                        Penguins in St Kilda
+                                    </h5>
+                                    <p class="card-text">
+                                        Home to 1,400 penguins, St Kilda’s sandy beaches are the perfect spot to see some wildlife without having to travel too far from Melbourne’s CBD. But be sure not to touch them, feed them, or shine any lights in their eyes! We want to protect our little tuxedoed friends.
+                                    </p>
+                                    <div class="text-center">
+                                        <a
+                                                class="btn-contact"
+                                                href="https://earthcarestkilda.org.au/"
+                                                target="_blank"
+                                        >Official Website</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="slide-indicator-container"></div>
+                        <div class="slider-controls">
+                            <div id="pre" class="slider-btn">
+                                <i class="fa fa-chevron-left" aria-hidden="true"><</i>
+                            </div>
+                            <div id="nex" class="slider-btn">
+                                <i class="fa fa-chevron-right" aria-hidden="true">></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-md-12">
+                <p>&nbsp</p>
+                <h2 class="get-bolds">Related Organizations</h2>
+                <div>
+                    <p class="nature_area"><br>There are some information about organizations that can provide public welfare activities of urban nature.</p>
+                </div>
+            </div>
+
+            <section>
+                <form role="form" action = "/activity" method="get" id = "orgForm"  autocomplete="off">
+                    <div class="search-wrap">
+                            <input type="text" placeholder="Enter Organization's name to search"  id="search-box" name="keyword"  >
+                            <button type="submit" >Search</button>
+                    </div>
+
+                    <div class="authors-wrap">
+                        <ul class="filters">
+                            <li>
+                                <span>Select Type: </span>
+                                <select id="select" type="text" name="select">
+                                    <option id="all" value="">All</option>
+                                    <option id="zoo" value="Biodiversity">Biodiversity</option>
+                                    <option id="city" value="Lands">Lands And Waters</option>
+                                    <option id="dingo" value="Natural">Natural Habits</option>
+                                    <option id="garden" value="Garden">Garden</option>
+                                    <option id="nature" value="Vegetation">Vegetation</option>
+                                    <option id="penguin" value="Wildlife">Wildlife</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <button type="submit" > Apply Filters </button>
+                            </li>
+                        </ul>
+                        <ul id="authors" class="authors-list">
+                        <li th:each="i:${organizations}">
+                            <strong></i>[[${i.name}]]</strong>
+                            <span>[[${i.intro}]]</span>
+                            <span>[[${i.type}]]</span>
+                            <span><i class="icofont-envelope"></i>&nbsp&nbsp[[${i.Email}]]</span>
+                            <address><i class="icofont-phone"></i>&nbsp[[${i.telephone}]]</address>
+                            <a th:href="${i.web_url}" target="_blank"><i class="icofont-web"></i></i>&nbspOfficial Website</a>
+                        </li>
+                        </ul>
+
+                    </div>
+                </form>
+            </section>
+
+        </div>
+    </section>
+</section>
+
+
+<!-- ======= Features Section ======= -->
+<section id="features" class="features">
+    <div class="container" data-aos="fade-up">
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-3 col-md-4">
+                <div class="icon-box">
+                    <i class="icofont-arrow-left"></i>
+                    <h3></i><a href="planting-guide">Planting Guide</a></h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+                <div class="icon-box">
+                    <h3><a href="index">Home Page</a></h3>
+                    <i class="icofont-arrow-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End Features Section -->
+
+
+<a id="back_top" href="javascript:;">
+    <span>^</span>
+</a>
+
+<!-- End Speakers Section -->
+<!--jQuery 和 Bootstrap 集成包（集成了 Popper） -->
+<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.js"></script>
+<script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.js"></script>
+
+<!-- Vendor JS Files -->
+<script src="php-email-form/validate.js"></script>
+<script src="owl.carousel/owl.carousel.min.js"></script>
+<script src="isotope-layout/isotope.pkgd.min.js"></script>
+<script src="venobox/venobox.min.js"></script>
+<script src="js/backTop.js"></script>
+<script type=“text/javascript” src="jquery.js"></script>
+<script src="js/activity.js"></script>
+</body>
+</html>

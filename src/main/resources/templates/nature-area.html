@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en"  >
+<head>
+    <title>Add Map</title>
+
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <title>Add Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="js/main.js" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="icofont/icofont.min.css" rel="stylesheet">
+    <link href="boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="animate.css/animate.min.css" rel="stylesheet">
+    <link href="owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- circle map-->
+    <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1296284/dashboard.min.css'>
+
+</head>
+
+<body>
+
+<!-- ======= Top Bar ======= -->
+<div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex">
+        <div class="contact-info mr-auto">
+        </div>
+    </div>
+</div>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+        <a href="index" class="logo"><img src="/images/logo.png" alt="" title=""></a>
+        <p class="project-name">Nature Space +</p>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav class="nav-menu d-none d-lg-block">
+            <ul>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                <li ><a href="/index">Home</a></li>
+
+                <li class="drop-down"><a href="#">Nature Area</a>
+                    <ul>
+                        <li class="active" ><a href="nature-area">Green Area</a></li>
+                        <li><a href="water-area">Water Area</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop-down"><a href="#">Biodiversity Guide</a>
+                    <ul>
+                        <li><a href="wild-life">Wildlife</a></li>
+                        <li><a href="vegetation">Vegetation</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop-down"><a href="#">Green Design Guide</a>
+                    <ul>
+                        <li><a href="green_design">Decorative Type</a></li>
+                        <li><a href="decorative-sample-all">Decorative Sample</a></li>
+                        <li><a href="plant-sample-all">Recommended Plants</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop-down"><a href="#">Planting Guide</a>
+                    <ul>
+                        <li><a href="planting-guide">Article</a></li>
+                        <li><a href="video">Video</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="activity">Activities</a></li>
+
+                <!--                <li><a href="#about">About</a></li>-->
+            </ul>
+        </nav>
+        <!-- nav-menu -->
+        <!--        <a href="#about" class="get-started-btn scrollto">Reserved_button</a>-->
+
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- ======= Green Design Speaker Section ======= -->
+<section id="speakers">
+    <!-- ======= Green Design Guide Section ======= -->
+    <section id="green-design-guide" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <li class="hint_bar">&nbsp&nbsp<a class="hint_bar" href="index">Home</a>&nbsp/&nbspGreen area</li>
+            <div class="section-title">
+                <h2>Green Area</h2>
+                <p>To raise awareness of the protection of natural areas is one of the ways to slow the gradual loss of natural space in Melbourne. There will be show some the distribution of the Melbourne city nature area and how many Melbourne's natural areas can get mroe nature area.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Green Design Guide Section ======= -->
+        <div class="container" data-aos="fade-up">
+
+            <div id="map"></div>
+            <p><br><br></p>
+            <!-- partial:index.partial.html -->
+            <div id="app" data-aos="fade-up">
+                <div class="container">
+                    <div class="card text-center">
+                        <h3 class="title text-center">Urban Green Cover In Melbourne-<span style="color: red"> 2000 Hectare Lost</span><i is="caret-stat" direction="down"></i></h3>
+                        <h5>Melbourne’s tree population is vast – we have 70,000 council-owned trees, worth around $650 million. Trees are a defining part of Melbourne and our parks, gardens, green spaces and tree-lined streets contribute enormously to the liveability of the city.But the trees are now under threat. </h5>
+                        <div is="circle-stat" percentage="22" color="#28d866" title="Forest Cover" id="test"></div>
+                        <div is="circle-stat" percentage="27" color="#28a866" title="Trees Lost" id="test1"></div>
+                        <div is="circle-stat" percentage="44" color="#a8a866" title="Forecast Lost" id="test2"></div>
+                    </div>
+                </div>
+            </div>
+            <section id="tips" class="tips">
+            <div class="row" data-aos="fade-up">
+                <div class="col-md-12">
+                    <p>&nbsp</p>
+                    <h2 class="get-bolds">Tips to natural area:</h2>
+                    <div>
+                        <p class="nature_area"><br>Threats need to be better managed across the nature space of Melbourne city to ensure that species and ecosystems are conserved, and to give biodiversity the best chance to adapt to the effects of climate change and human population growth.
+                        <p class="nature_area">1. Better understand and respond to key threats and opportunities for biodiversity conservation, such as control of weeds and pest animals, fire regimes, disease, the role of apex predators, and climate change.</p>
+                        <p class="nature_area">2. In the city, native animals interact with people in many ways. Sometimes these interactions can be negative (for example, when magpies swoop people). A ‘living with wildlife’ approach encourages positive attitudes to wildlife. It includes understanding wildlife behaviour and ecology, managing wildlife conservation and welfare, and promoting non-lethal methods of managing wildlife impacts.</p>
+                        <p class="nature_area">3. Native vegetation provides habitat for plants and animals and delivers a range of ecosystem services that make land more productive and contribute to human well-being. In Melbourne city, a permit is usually required to remove, destroy, or lop native vegetation.  These regulations  are known as the native vegetation removal regulations and are primarily implemented through local council planning schemes.</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <p>&nbsp</p>
+        </div>
+</section>
+
+<!-- ======= Features Section ======= -->
+<section id="features" class="features">
+    <div class="container" data-aos="fade-up">
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-3 col-md-4">
+                <div class="icon-box">
+                    <i class="icofont-arrow-left"></i>
+                    <h3></i><a href="index">Home Page</a></h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+                <div class="icon-box">
+                    <h3><a href="water-area">Water Area</a></h3>
+                    <i class="icofont-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End Features Section -->
+
+
+<a id="back_top" href="javascript:;">
+    <span>^</span>
+</a>
+
+
+<script id="side-nav" type="x-template">
+
+</script>
+
+<script id="caret-statistic" type="x-template">
+    <a href="#tips" data-toggle="tooltip">
+        <svg height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+            <polygon class="up" points="8 4 2 4 5 0 8 4" :style="'display: ' + (this.direction === 'up' ? 'block' : 'none') " />
+            <polygon class="down" points="2 6 8 6 5 10 2 6" :style="'display: ' + (this.direction === 'down' ? 'block' : 'none')"/>
+        </svg>
+    </a>
+</script>
+
+<script id="circle-statistic" type="x-template">
+    <div class="display-in-block mlr35">
+        <svg :id="id" class="circle-stat" width="110" height="140" xmlns="http://www.w3.org/2000/svg" v-on:click.prevent="test" :stroke-dasharray="strokeValue + ' 330'" :stroke-dashoffset="strokeValue">
+            <g>
+                <ellipse ry="50" rx="50" id="svg_1" cy="52" cx="52.5" stroke-width="3" :stroke="color" fill="#fff" stroke-linecap="round" />
+                <text font-size="14" id="svg_3" y="140" x="15" stroke-width="0" stroke="#000" fill="#000000">{{title}}</text>
+                <text font-size="24" id="svg_3" y="60.5" x="28.48438" stroke-width="0" stroke="#000" fill="#000000">{{percentage}}%</text>
+            </g>
+        </svg>
+    </div>
+</script>
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://use.fontawesome.com/9d57954f8d.js'></script><script  src="js/script.js"></script>
+
+<script src="js/greenAreaMap.js"></script>
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA2VNlJwBT18QW8qPvSrtkfr7a6RjEEd0&callback=initMap&libraries=&v=weekly"
+        async
+></script>
+
+<!-- End Speakers Section -->
+<!--jQuery 和 Bootstrap 集成包（集成了 Popper） -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+
+<!-- Vendor JS Files -->
+<script src="jquery/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="jquery.easing/jquery.easing.min.js"></script>
+<script src="php-email-form/validate.js"></script>
+<script src="owl.carousel/owl.carousel.min.js"></script>
+<script src="isotope-layout/isotope.pkgd.min.js"></script>
+<script src="venobox/venobox.min.js"></script>
+<script src="js/backTop.js"></script>
+<script type=“text/javascript” src="jquery.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.test.mapper.ActivityMapper">
+    <resultMap id="Activity" type="com.example.test.bean.ActivityBean">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="intro" jdbcType="VARCHAR" property="intro" />
+        <result column="location" jdbcType="VARCHAR" property="location" />
+        <result column="website" jdbcType="VARCHAR" property="website" />
+        <result column="picture" jdbcType="VARCHAR" property="picture" />
+    </resultMap>
+
+    <select id="getInfo" resultMap= "Activity">
+        SELECT * FROM activity
+    </select>
+
+</mapper>

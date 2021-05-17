@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <title>Add Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="js/main.js" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="icofont/icofont.min.css" rel="stylesheet">
+    <link href="boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="animate.css/animate.min.css" rel="stylesheet">
+    <link href="owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- circle map-->
+    <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1296284/dashboard.min.css'>
+</head>
+<body>
+
+<!-- ======= Top Bar ======= -->
+<div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex">
+        <div class="contact-info mr-auto">
+        </div>
+    </div>
+</div>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+        <a href="index" class="logo"><img src="/images/logo.png" alt="" title=""></a>
+        <p class="project-name">Nature Space +</p>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav class="nav-menu d-none d-lg-block">
+            <ul>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                <li><a href="/index">Home</a></li>
+
+                <li class="drop-down"><a href="#">Nature Area</a>
+                    <ul>
+                        <li><a href="nature-area">Green Area</a></li>
+                        <li class="active"><a href="water-area">Water Area</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop-down"><a href="#">Biodiversity Guide</a>
+                    <ul>
+                        <li><a href="wild-life">Wildlife</a></li>
+                        <li><a href="vegetation">Vegetation</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop-down"><a href="#">Green Design Guide</a>
+                    <ul>
+                        <li><a href="green_design">Decorative Type</a></li>
+                        <li><a href="decorative-sample-all">Decorative Sample</a></li>
+                        <li><a href="plant-sample-all">Recommended Plants</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop-down"><a href="#">Planting Guide</a>
+                    <ul>
+                        <li><a href="planting-guide">Article</a></li>
+                        <li><a href="video">Video</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="activity">Activities</a></li>
+
+                <!--                <li><a href="#about">About</a></li>-->
+            </ul>
+        </nav>
+        <!-- nav-menu -->
+        <!--        <a href="#about" class="get-started-btn scrollto">Reserved_button</a>-->
+
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- ======= Green Design Speaker Section ======= -->
+<section id="speakers">
+    <!-- ======= Green Design Guide Section ======= -->
+    <section id="green-design-guide" class="about">
+        <div class="container" data-aos="fade-up">
+            <li class="hint_bar">&nbsp&nbsp<a class="hint_bar" href="index">Home</a>&nbsp/&nbspWater area</li>
+            <div class="section-title">
+                <h2>Water Area</h2>
+                <p>To raise awareness of the protection of natural areas is one of the ways to slow the gradual loss of natural space in Melbourne. There will be show some the distribution of the Melbourne city nature area and how many Melbourne's natural areas can get mroe nature area.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Green Design Guide Section ======= -->
+    <div class="container" data-aos="fade-up">
+
+        <div id="map"></div>
+        <p><br><br></p>
+        <!-- partial:index.partial.html -->
+        <div id="app" data-aos="fade-up">
+            <div class="container">
+                <div class="card text-center">
+                    <h3 class="title text-center">Urban Water Space in Melbourne </h3>
+                    <h5>Rivers, creeks and wetlands are central to everyday life, sustaining a complex ecosystem of plants and animals – and providing natural spaces for people to enjoy. The plants and animals that rely on rivers live together in a delicate balance. However, this can be upset by human activities that change a river’s natural state, sometimes with widespread and destructive results.Nowadays, the City of Melbourne have one constructed wetland system, located in Royal Park and the lowest section of  of Yarra River. </h5>
+                    <div is="circle-stat" percentage="20" color="#28d866" title="Water Storage" id="test4"> </div>
+                    <div is="circle-stat" percentage="95" color="#28a866" title="Became Wastewater" id="test5"> </div>
+                    <div is="circle-stat" percentage="50" color="#a8a866" title="River Flow Lost" id="test6"></div>
+                </div>
+            </div>
+        </div>
+        <section id="tips" class="tips">
+            <div class="row" data-aos="fade-up">
+                <div class="col-md-12">
+                    <p>&nbsp</p>
+                    <h2 class="get-bolds">Tips to protect the rivers in urban area:</h2>
+                    <div>
+                        <p class="nature_area_bolds"><br>For the Commercial & Industrial Areas</p>
+                        <p class="nature_area">1. The waterway, river banks, riverside parkland and recreational trails are not overshadowed.</p>
+                        <p class="nature_area">2. Retention of the natural topography of the riverbanks.</p>
+                        <p class="nature_area">3. Elements of identified industrial heritage are retained.</p>
+                        <p class="nature_area">4. New buildings do not overwhelm the width of the waterway.</p>
+                        <p class="nature_area">5. Further encroachment of the built form into the waterways corridor is avoided.</p>
+                        <p class="nature_area">6. Strong landscaped edge to river and adjoining open space is to screen views to buildings is maintained and strengthened.</p>
+                        <p class="nature_area">7. Tree canopy is retained and enhanced as the dominant visual elements along the skyline.</p>
+                        <p class="nature_area">8. Wastewater and stormwater are managed to avoid waterway pollution.</p>
+                        <p class="nature_area_bolds"><br>For the Residential Areas</p>
+                        <p class="nature_area">1. Low density character is maintained.</p>
+                        <p class="nature_area">2. Visibility of buildings from the river, adjoining parkland and the opposite bank is minimised or avoided where possible.</p>
+                        <p class="nature_area">3. Strong landscaped edge to river and open spaces to screen views to buildings.</p>
+                        <p class="nature_area">4. Further encroachment of built form into the river corridor is avoided.</p>
+                        <p class="nature_area">5. Tree canopy is retained and enhanced as dominant visual element</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+
+
+<!-- ======= Features Section ======= -->
+<section id="features" class="features">
+    <div class="container" data-aos="fade-up">
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-3 col-md-4">
+                <div class="icon-box">
+                    <i class="icofont-arrow-left"></i>
+                    <h3></i><a href="nature-area">Green Area</a></h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+                <div class="icon-box">
+                    <h3><a href="wild-life">Wild Life</a></h3>
+                    <i class="icofont-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End Features Section -->
+
+<a id="back_top" href="javascript:;">
+    <span>^</span>
+</a>
+
+
+<script id="side-nav" type="x-template">
+
+</script>
+
+<script id="caret-statistic" type="x-template">
+    <a href="#tips" data-toggle="tooltip">
+        <svg height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+            <polygon class="up" points="8 4 2 4 5 0 8 4" :style="'display: ' + (this.direction === 'up' ? 'block' : 'none') " />
+            <polygon class="down" points="2 6 8 6 5 10 2 6" :style="'display: ' + (this.direction === 'down' ? 'block' : 'none')"/>
+        </svg>
+    </a>
+</script>
+
+<script id="circle-statistic" type="x-template">
+    <div class="display-in-block mlr35">
+        <svg :id="id" class="circle-stat" width="110" height="140" xmlns="http://www.w3.org/2000/svg" v-on:click.prevent="test" :stroke-dasharray="strokeValue + ' 330'" :stroke-dashoffset="strokeValue">
+            <g>
+                <ellipse ry="50" rx="50" id="svg_1" cy="52" cx="52.5" stroke-width="3" :stroke="color" fill="#fff" stroke-linecap="round" />
+                <text font-size="14" id="svg_3" y="140" x="15" stroke-width="0" stroke="#000" fill="#000000">{{title}}</text>
+                <text font-size="24" id="svg_3" y="60.5" x="28.48438" stroke-width="0" stroke="#000" fill="#000000">{{percentage}}%</text>
+            </g>
+        </svg>
+    </div>
+</script>
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://use.fontawesome.com/9d57954f8d.js'></script><script  src="js/script.js"></script>
+
+<script src="js/waterAreaMap.js"></script>
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA2VNlJwBT18QW8qPvSrtkfr7a6RjEEd0&callback=initMap&libraries=&v=weekly"
+        async
+></script>
+
+<!-- End Speakers Section -->
+<!--jQuery 和 Bootstrap 集成包（集成了 Popper） -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+
+<!-- Vendor JS Files -->
+<script src="jquery/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="jquery.easing/jquery.easing.min.js"></script>
+<script src="php-email-form/validate.js"></script>
+<script src="owl.carousel/owl.carousel.min.js"></script>
+<script src="isotope-layout/isotope.pkgd.min.js"></script>
+<script src="venobox/venobox.min.js"></script>
+<script src="js/backTop.js"></script>
+<script type=“text/javascript” src="jquery.js"></script>
+
+</body>
+</html>
